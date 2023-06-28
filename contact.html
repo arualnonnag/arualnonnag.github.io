@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js">
+
+    <title></title>
+</head>
+<body>
+
+    <div class="flex-headerabout">
+        <div style="flex-grow: 8">
+            <h1>
+                Turn Cycling
+            </h1>
+        </div>
+        <div style="flex-grow: 1"><a href="index.html">home</a></div>
+    </div>
+
+    
+
+
+    <div class="flex-container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname"><br>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder=><br>
+
+          <label for="fname">email</label>
+          <input type="text" id="fname" name="email"><br>
+
+      
+          <label for="Message">Message</label><br>
+          <textarea id="subject" name="subject" style="height:300px" style="width:600px"></textarea><br>
+      
+          <label for="bike">Bike</label>
+          <select id="country" name="country">
+            <option value="Mountain">Mountain</option>
+            <option value="Gravel">Gravel</option>
+            <option value="Road">Road</option>
+          </select>
+      
+        </form>
+      </div>
+
+            <input type="checkbox" id="event" name="event" value="event">
+            <label for="event"> I would like to know more about your events</label><br>
+            <input type="checkbox" id="coaching" name="coaching" value="coaching">
+            <label for="coaching"> I would like to know more about your coaching plans<br>
+            <input type="checkbox" id="news" name="news" value="news">
+            <label for="news"> I would like to receive your monthly newsletter</label><br>
+          </form>
+
+      </form>
+
+
+
+     <div class="button">
+        <button onclick="hideunhide('paragraph1')">Send Message</button>
+    </div>
+
+        <p id="paragraph1" style="display: none; font-size: 50px;">Thank You
+        </p>
+        
+
+<footer>
+<script src= "script.js">
+
+</script>
+
+</footer>
+
+
+
+
+</body>
+</html>

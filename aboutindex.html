@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="flex-headerabout">
+        <div style="flex-grow: 8">
+            <h1>
+                Turn Cycling
+            </h1>
+        </div>
+        <div style="flex-grow: 1"><a href="index.html">home</a></div>
+    </div>
+    
+    <div class="flex-textmain">
+        <div>
+            <h1>About us 
+            </h1>
+        </div>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Egestas dui id ornare arcu odio ut sem nulla pharetra. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. <br> Nisl rhoncus mattis rhoncus urna. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Mi eget mauris pharetra et ultrices neque ornare. Cursus euismod quis viverra nibh cras pulvinar mattis. Amet aliquam id diam maecenas ultricies mi eget. Blandit cursus risus at ultrices mi tempus imperdiet nulla. <br> Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum.
+                 </p>
+    </div>
+    </div>
+
+
+    <div class="flex-experience">
+    
+           <h1>
+            Race experience
+           </h1>
+
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ultrices sagittis orci a scelerisque purus semper eget. <br> Egestas dui id ornare arcu odio ut sem nulla pharetra. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Nisl rhoncus mattis rhoncus urna. Eget aliquet nibh praesent tristique magna sit amet purus gravida. <br> Mi eget mauris pharetra et ultrices neque ornare. Cursus euismod quis viverra nibh cras pulvinar mattis. Amet aliquam id diam maecenas ultricies mi eget. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. </p>
+    </div>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="./images/nielforest.jpg" style="width:100%">
+          <div class="text">In the forest</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="./images/LauraJshams.jpeg" style="width:100%">
+          <div class="text">In the mountains</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="./images/niel.jpg" style="width:100%">
+          <div class="text">Skills work</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./images/Laurataiwan.jpeg" style="width:100%">
+            <div class="text">Cycling in Taiwan</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./images/hardknot.JPG" style="width:100%">
+            <div class="text">Race Day!</div>
+          </div>
+  
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+    <div class="flex-eventcalandar">
+
+    <h2>
+        Events Calendar
+    </h2>
+    </div>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      June<br>
+      <span style="font-size:18px">2023</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li><span class="active">22</span></li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+</ul>
+
+
+
+
+  
+
+    <div class="flex-coachingpackages">
+        <h1>
+            Coaching Packages
+        </h1>
+    </div>
+
+
+
+    <div class="flex-standard">
+        <div>
+            <h2>Standard 
+            </h2>
+        </div>
+                Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Mi proin sed libero enim. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Aliquet bibendum enim facilisis gravida neque convallis. Volutpat diam ut venenatis tellus. Tortor vitae purus faucibus ornare suspendisse. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Eget aliquet nibh praesent tristique magna sit amet. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus.Eu facilisis sed odio morbi quis commodo. <br> Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Vel fringilla est ullamcorper eget nulla facilisi etiam. Semper auctor neque vitae tempus quam pellentesque nec. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Aliquam sem fringilla ut morbi tincidunt augue interdum. Volutpat est velit egestas dui. Justo nec ultrices dui sapien eget mi. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Nulla facilisi etiam dignissim diam quis enim lobortis
+        <div>
+            <p>
+
+            </p>
+    </div>
+    </div>
+
+    <div class="flex-premium">
+        <div>
+            <h2>Premium 
+            </h2>
+        </div>
+        <div>
+            <p>
+                Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Eu facilisis sed odio morbi quis commodo. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Vel fringilla est ullamcorper eget nulla facilisi etiam. Semper auctor neque vitae tempus quam pellentesque nec. <br> Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Aliquam sem fringilla ut morbi tincidunt augue interdum. Volutpat est velit egestas dui. Justo nec ultrices dui sapien eget mi. <br> Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Consequat ac felis donec et odio pellentesque diam. <br> At tellus at urna condimentum mattis pellentesque id nibh. Orci sagittis eu volutpat odio. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Eget mi proin sed libero enim sed.
+            </p>
+    </div>
+    </div>
+
+    
+</body>
+</html>
